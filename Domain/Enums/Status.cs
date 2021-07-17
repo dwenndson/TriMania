@@ -1,4 +1,4 @@
-﻿namespace TriMania_API.Enums
+﻿namespace Dominio.Enums
 {
     public enum Status
     {
