@@ -1,4 +1,6 @@
 using Dominio.Entidades;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -29,6 +31,7 @@ namespace Application
         public void ConfigureServices(IServiceCollection services)
         {
             services.Configure<JwtSecret>(Configuration.GetSection("AppSettion"));
+                
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
