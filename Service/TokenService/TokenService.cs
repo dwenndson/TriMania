@@ -11,9 +11,10 @@ namespace Service.TokenService
 {
     public class TokenService : ITokenService
     {
-        public string GerarToken(Usuario usuario)
+        internal string GerarToken(Usuario usuario)
         {
-            var token = 
+            var token = null;
+            var user = this.usuario.SingleOrDefault (id = i)
             var tokenHandler = new JwtSecurityTokenHandler();
             var key = Encoding.ASCII.GetBytes("");
             throw new NotImplementedException();
