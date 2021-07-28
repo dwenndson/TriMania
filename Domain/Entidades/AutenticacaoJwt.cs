@@ -9,12 +9,11 @@ namespace Dominio.Entidades
 {
     public class AutenticacaoJwt
     {
-        public AutenticacaoJwt(int id, string userName, string password, string role)
+        public AutenticacaoJwt(int id, string userName, string password)
         {
             Id = id;
             UserName = userName;
             Password = password;
-            Role = role;
         }
 
         public int Id { get; set; }
@@ -22,8 +21,5 @@ namespace Dominio.Entidades
         public string UserName { get; protected set; }
         [Required]
         public string Password { get; protected set; }
-        public string Role { get; protected set; }
-
-
     }
 }
